@@ -23,9 +23,9 @@ jobs:
       with:
         node-version: '20'
 
-    # Set up Python with the version from the matrix
+    # Set up Python with the version from the matrix using setup-python@v3
     - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v3
       with:
         python-version: ${{ matrix.python-version }}
 
