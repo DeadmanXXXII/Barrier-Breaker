@@ -275,6 +275,7 @@ Upload and translate interface
 
 
  Directory for translated files
+ 
 ├── modules/      
 
  Custom modules
