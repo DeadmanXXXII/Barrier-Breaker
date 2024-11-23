@@ -2,9 +2,9 @@ name: Python package
 
 on:
   push:
-    branches: ["main"]
+    branches: [ "main" ]
   pull_request:
-    branches: ["main"]
+    branches: [ "main" ]
 
 jobs:
   build:
@@ -16,16 +16,14 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4  # Ensure you're using the latest version of this action
-
-    # Set up Node.js 20 explicitly
-    - name: Set up Node.js 20
+    
+    - name: Set up Node.js 20 (for compatibility with the latest GitHub Actions)
       uses: actions/setup-node@v3
       with:
         node-version: '20'
 
-    # Set up Python with the version from the matrix using setup-python@v3
     - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v3  # Reverting to v3 for compatibility with Node.js 20
+      uses: actions/setup-python@v4  # Ensure compatibility with Node.js 20
       with:
         python-version: ${{ matrix.python-version }}
 
