@@ -244,19 +244,63 @@ Supported Languages:
 
 
 translation_tool/
+
 │
-├── app.py                       # Main Flask application
-├── requirements.txt             # Python dependencies
-├── static/                      # Static files (CSS, JS, images)
-├── templates/                   # HTML templates for the UI
-│   └── index.html               # Upload and translate interface
-├── uploads/                     # Directory for uploaded files
-├── outputs/                     # Directory for translated files
-├── modules/                     # Custom modules
-│   ├── file_handler.py          # Handles file reading/writing
-│   ├── translator.py            # Language translation logic
-│   └── grammar_corrector.py     # Grammar and punctuation correction
-├── README.md                    # Documentation
-└── .gitignore                   # Git ignore file
+
+├── app.py 
+
+ Main Flask application
+ 
+├── requirements.txt     
+
+ Python dependencies
+ 
+├── static/                      
+
+ Static files (CSS, JS, images)
+ 
+├── templates/       
+
+ HTML templates for the UI
+ 
+│   └── index.html       
+
+Upload and translate interface
+
+├── uploads/        
+
+ Directory for uploaded files
+ 
+├── outputs/         
+
+
+ Directory for translated files
+├── modules/      
+
+ Custom modules
+ 
+│   ├── file_handler.py    
+
+ Handles file reading/writing
+ 
+│   ├── translator.py
+
+
+ Language translation logic
+ 
+│   └── grammar_corrector.py  
+
+ Grammar and punctuation correction
+ 
+├── README.md          
+ 
+ Documentation
+ 
+└── .gitignore       
+
+ Git ignore file
+
+
+ 
 
 
