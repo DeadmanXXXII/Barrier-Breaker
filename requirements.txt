@@ -4,3 +4,4 @@ torch
 language-tool-python
 python-docx
 PyPDF2
+sentencepiece
