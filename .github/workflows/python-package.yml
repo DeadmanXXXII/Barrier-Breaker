@@ -19,13 +19,13 @@ jobs:
 
     # Set up Node.js 20 explicitly to address Node.js 20 compatibility
     - name: Set up Node.js 20
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
       with:
         node-version: '20'
 
     # Set up Python with the version from the matrix using setup-python@v3
     - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v3
+      uses: actions/setup-python@v4
       with:
         python-version: ${{ matrix.python-version }}
 
